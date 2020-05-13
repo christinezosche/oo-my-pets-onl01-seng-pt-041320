@@ -64,5 +64,8 @@ class Owner
       cat.owner = nil
     end
   end
+  
+  def list_pets
+    puts Cat.all.select{|cat| cat.owner == self}
 
 end
