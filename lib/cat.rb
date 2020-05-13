@@ -16,6 +16,6 @@ class Cat
   end
   
   def cats
-    Cats.all.find{|cat| Cat.owner = self}
+    Cats.all.select{|cat| Cat.owner = self}
   end
 end
