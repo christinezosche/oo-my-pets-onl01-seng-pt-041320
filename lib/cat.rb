@@ -14,4 +14,8 @@ class Cat
   def self.all
     @@all
   end
+  
+  def cats
+    Cats.all.find{|cat| Cat.owner = self}
+  end
 end
